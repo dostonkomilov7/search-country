@@ -22,10 +22,10 @@ input.addEventListener("keydown", async function fn(e) {
     if (e.key === "Enter" && input.value && input.value !== " ") {
         if (container.innerHTML) {
             container.innerHTML = ``;
-            let input_content = input.value.trim().toLowerCase();
-            name(input_content);
-            input.value = "";
         }
+        let input_content = input.value.trim().toLowerCase();
+        name(input_content);
+        input.value = "";
     }
 })
 
